@@ -1,11 +1,11 @@
 'use strict';
 
-angular.module('umichAdpiApp')
-  .controller('NavbarCtrl', function ($scope, $location) {
-    $scope.menu = [{
-      'title': 'Home',
-      'link': '/'
-    },
+angular.module('umichAdpiApp').controller('NavbarCtrl', function ($scope, $location) {
+    $scope.menu = [
+        {
+            'title': 'Home',
+            'link': '/'
+        },
         {
             'title': 'About Us',
             'link': '/about-us'
@@ -33,9 +33,10 @@ angular.module('umichAdpiApp')
         {
             'title': 'Contact Us',
             'link': '/contact'
-        },];
-    
-    $scope.isActive = function(route) {
-      return route === $location.path();
+        },
+    ];
+
+    $scope.isActive = function (route) {
+        return route === $location.path();
     };
-  });
+});

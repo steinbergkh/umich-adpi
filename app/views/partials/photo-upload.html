@@ -1,16 +1,21 @@
 <div id="direct_upload">
     <h1>New Photo</h1>
+
     <h2>Direct upload from the browser</h2>
+
     <p>You can also drag and drop an image file into the dashed area.</p>
+
     <form>
         <div class="form_line">
             <label path="title">Title:</label>
+
             <div class="form_controls">
                 <input type="text" class="form-control" placeholder="Title" ng-model="title" ng-change="updateTitle()"/>
             </div>
         </div>
         <div class="form_line">
             <label>Image:</label>
+
             <div class="form_controls">
                 <div class="upload_button_holder">
                     <a href="#" class="upload_button">Upload</a>
@@ -18,7 +23,7 @@
                 </div>
                 <div class="status">{{status}}</div>
                 <div class="progress-bar">
-                  <div class="progress" style="width: {{progress}}%" ng-init="progress=0"></div>
+                    <div class="progress" style="width: {{progress}}%" ng-init="progress=0"></div>
                 </div>
             </div>
         </div>
@@ -29,11 +34,12 @@
         </div>
     </form>
     <div class="info">
-      <table>
-        <tr ng-repeat="(key, value) in result">
-          <td> {{key}} </td> <td> {{ value }} </td>
-        </tr>
-      </table>
+        <table>
+            <tr ng-repeat="(key, value) in result">
+                <td> {{key}}</td>
+                <td> {{ value }}</td>
+            </tr>
+        </table>
     </div>
 </div>
 

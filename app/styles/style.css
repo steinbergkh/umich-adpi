@@ -7,9 +7,11 @@ Syntax error: File to import not found or unreadable: bootstrap-sass-official/ve
 1: @import 'main';
 2: @import 'colorful-flat';
 3: 
-4: .container{
-5:   width:100%;
-6: }
+4: $turquoise: rgb(18, 183, 179);
+5: $light-blue: rgb(179, 226, 226);
+6: $light-gray: #333;
+7: $dark-gray: rgba(255, 255, 255, 0.43);
+8: 
 
 Backtrace:
 main.scss:3
@@ -56,6 +58,7 @@ style.scss:1
 /Users/steinbergkh/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `<main>'
 */
 body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss.\A               Load path: /Users/steinbergkh/Documents/Programming/angularjs/umich-adpi/app/styles\A         on line 3 of main.scss\A         from line 1 of style.scss\A \A 1: @import 'main';\A 2: @import 'colorful-flat';\A 3: \A 4: .container{\A 5:   width:100%;\A 6: }"; }
+    white-space: pre;
+    font-family: monospace;
+    content: "Syntax error: File to import not found or unreadable: bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss.\A               Load path: /Users/steinbergkh/Documents/Programming/angularjs/umich-adpi/app/styles\A         on line 3 of main.scss\A         from line 1 of style.scss\A \A 1: @import 'main';\A 2: @import 'colorful-flat';\A 3: \A 4: $turquoise: rgb(18, 183, 179);\A 5: $light-blue: rgb(179, 226, 226);\A 6: $light-gray: #333;\A 7: $dark-gray: rgba(255, 255, 255, 0.43);\A 8: ";
+}

@@ -1,0 +1,41 @@
+<table class="table positions">
+    <thead>
+    <tr>
+        <th>
+            id
+        </th>
+        <th>
+            rank
+        </th>
+        <th>
+            title
+        </th>
+        <th>
+            description
+        </th>
+        <th>
+
+        </th>
+        <th>
+
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="position row" ng-repeat="position in execPositions">
+        <td>{{position._id}}</td>
+        <td>{{position.rank}}</td>
+        <td>{{position.title}}</td>
+        <td>{{position.description}}</td>
+        <td>
+            <!-- PUT EDIT BUTTON HERE -->
+        </td>
+        <td>
+            <!-- PUT DELETE BUTTON HERE -->
+        </td>
+    </tr>
+    <tr>
+
+    </tr>
+    </tbody>
+</table>

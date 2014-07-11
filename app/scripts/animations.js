@@ -1,7 +1,8 @@
-angular.module('umichAdpiApp').animation('.photo', function() {
+'use strict';
+angular.module('umichAdpiApp').animation('.photo', function () {
 
-    var animateUp = function(element, className, done) {
-        if(className != 'active') {
+    var animateUp = function (element, className, done) {
+        if (className !== 'active') {
             return;
         }
         element.css({
@@ -15,15 +16,15 @@ angular.module('umichAdpiApp').animation('.photo', function() {
             top: 0
         }, done);
 
-        return function(cancel) {
-            if(cancel) {
+        return function (cancel) {
+            if (cancel) {
                 element.stop();
             }
         };
-    }
+    };
 
-    var animateDown = function(element, className, done) {
-        if(className != 'active') {
+    var animateDown = function (element, className, done) {
+        if (className != 'active') {
             return;
         }
         element.css({
@@ -36,12 +37,12 @@ angular.module('umichAdpiApp').animation('.photo', function() {
             top: -500
         }, done);
 
-        return function(cancel) {
-            if(cancel) {
+        return function (cancel) {
+            if (cancel) {
                 element.stop();
             }
         };
-    }
+    };
 
     return {
         addClass: animateUp,
