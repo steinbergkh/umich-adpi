@@ -50,7 +50,6 @@ app.scss:47
 /Users/steinbergkh/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `<main>'
 */
 body:before {
-    white-space: pre;
-    font-family: monospace;
-    content: "Syntax error: File to import not found or unreadable: filterButton/filterButton.scss.\A               Load path: /Users/steinbergkh/Documents/Programming/angularjs/umich-adpi/client/app\A         on line 47 of app.scss\A \A 42: @import 'philanthropy/philanthropy.scss';\A 43: @import 'photo/edit/edit.scss';\A 44: @import 'photo/upload/upload.scss';\A 45: @import 'recruitment/recruitment.scss';\A 46: @import 'style.scss';\A 47: @import 'filterButton/filterButton.scss';\A 48: // endinjector";
-}
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: filterButton/filterButton.scss.\A               Load path: /Users/steinbergkh/Documents/Programming/angularjs/umich-adpi/client/app\A         on line 47 of app.scss\A \A 42: @import 'philanthropy/philanthropy.scss';\A 43: @import 'photo/edit/edit.scss';\A 44: @import 'photo/upload/upload.scss';\A 45: @import 'recruitment/recruitment.scss';\A 46: @import 'style.scss';\A 47: @import 'filterButton/filterButton.scss';\A 48: // endinjector"; }
