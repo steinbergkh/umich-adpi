@@ -185,28 +185,51 @@ angular.module('umichAdpiApp').factory('galleryAPIService', function ($rootScope
             tag: imageTag
         };
 
+        $rootScope.tagList = [];
+
+        var addTag = function (tag) {
+            // Returns true if the value is present in the list
+            if ((tag == "galleries_images") || (_.contains($rootScope.tagList, tag))) {
+
+            } else {
+                $rootScope.tagList.push(tag);
+            }
+        };
+
         var updateAll = function () {
-            AllImages.get(function (results) {
-                console.log('getting images by tag ' + params.tag);
-                imageData = results.resources;
-                $rootScope.photos = results.resources;
-                angular.forEach(imageData, function (value, key) {
-                    images.push({key: key, value: value});
-                });
-                getImageDetails();
+            AllImages.get().$promise.then(function (results) {
+                results = results.data;
+                if (results != undefined && results.length > 0) {
+                    imageData = results;
+                    $rootScope.photos = results;
+                    getImageDetails(results);
+                }
             });
         };
+
         $rootScope.imageDetails = [];
-        var getImageDetails = function () {
-            angular.forEach(images, function (val) {
-                var model = imageModel(val);
-                $rootScope.imageDetails.push(model);
+        var getImageDetails = function (results) {
+            imageData = results;
+            angular.forEach(results, function (image, index) {
+
+                var imageJSON = $rootScope.photos[index];
+                var imageDB = image;
+                var tagsArray = imageDB.tags.split(',');
+                imageDB.tags = [];
+                var i;
+                for (i = 0; i < tagsArray.length; ++i) {
+                    addTag(tagsArray[i]);
+                    imageDB.tags.push({"text": tagsArray[i]});
+                }
+                $rootScope.photos[index].tags = imageDB.tags;
+
             });
         };
 
         var updateData = function () {
             updateAll();
         };
+
         updateData();
 
         var getData = function () {
@@ -214,12 +237,12 @@ angular.module('umichAdpiApp').factory('galleryAPIService', function ($rootScope
         };
 
         var getDBImages = function () {
-            var AllImages = $resource('/api/photos');
-            AllImages.get(function (results) {
-                console.log('results = ' + results);
+            //var AllImages = $resource('/api/photos');
+            AllImages.get().$promise.then(function (results) {
+                $rootScope.photos = results.data;
+                console.log('results = ' + results.data);
             });
         };
-        //getDBImages();
 
         return {
             getData: getData,

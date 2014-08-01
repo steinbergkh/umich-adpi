@@ -28,8 +28,6 @@ exports.index = function (req, res) {
 // Get a single photo
 exports.gallery = function (req, res) {
     Photo.find({approved: true})
-        .where('rho').equals(false)
-        .sort('+cloudinaryId')
         .exec(function (err, Images) {
             console.log('Looking for gallery images!');
 
@@ -37,8 +35,11 @@ exports.gallery = function (req, res) {
                 res.send(err);
             }
             else {
+                var returnObj = {
+                    data: Images
+                };
                 console.log(Images);
-                res.send(Images);
+                res.send(returnObj);
             }
         });
 };
