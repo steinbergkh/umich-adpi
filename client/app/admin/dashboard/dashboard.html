@@ -1,0 +1,40 @@
+<div class="dashboard" ng-controller="DashboardController">
+
+    <!-- sidebar -->
+    <!--<div ng-include="'admin/components/dashboard/sidebar/sidebar.html'"></div> -->
+    <!-- END sidebar -->
+
+    <div snap-content snap-options="opts">
+        <div class="topbar">
+            <button class="toggle-button" snap-toggle="">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="dashboard-view">
+
+            <!-- dashboard header -->
+            <div class="dashboard-header">
+                <div class="dashboard-title">
+                    {{dashTitle}}
+                </div>
+                <div class="breadcrumbs">
+                    <ol class="breadcrumb">
+                        <li ng-repeat="level in breadcrumbs" ng-class="{'active':$last}">{{level.name}}</li>
+                    </ol>
+                </div>
+            </div>
+            <hr/>
+            <!-- END dashboard header -->
+
+            <!-- dashboard content -->
+            <div ui-view="content"></div>
+            <!-- END dashboard content -->
+
+            <!-- <div ng-include="'views/admin/dashboard/school/departments.html'"></div> -->
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="bower_components/angular-snap/angular-snap.css"/>
+<div class="dashboard" ng-controller="DashboardController">
+
+    <!-- sidebar -->
+    <div ng-include="'app/admin/dashboard/sidebar/sidebar.html'"></div>
+    <!-- END sidebar -->
+
+    <div snap-content snap-options="opts">
+        <div class="topbar">
+            <button class="toggle-button" snap-toggle="">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="dashboard-view">
+
+            <!-- dashboard header -->
+            <div ng-include="'app/admin/dashboard/dashboard-header.html'"></div>
+            <div class="dashboard-content" ui-view></div>
+            <!-- END dashboard content -->
+
+            <!-- <div ng-include="'views/admin/dashboard/school/departments.html'"></div> -->
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,441 @@
+/* -- FLAT-UI COLORS -- */
+@turquoise: #1ABC9C;
+@green-sea: #16A085;
+@emerald: #2ECC71;
+@nephritis: #27AE60;
+@peter-river: #3498DB;
+@belize-hole: #2980B9;
+@amethyst: #9B59B6;
+@wisteria: #8E44AD;
+@wet-asphalt: #34495E;
+@midnight-blue: #2C3E50;
+@sunflower: #F1C40F;
+@orange: #F39C12;
+@carrot: #E67E22;
+@pumpkin: #D35400;
+@alizarin: #E74C3C;
+@pomegranate: #C0392B;
+@clouds: #ECF0F1;
+@clouds-selected: rgba(189, 195, 199, 0.69);
+@silver: #BDC3C7;
+@concrete: #95A5A6;
+@asbestos: #7F8C8D;
+@white: white;
+/* -- END FLAT-UI COLORS -- */
+
+/* -- CURRENT COLOR SCHEME -- */
+@body-color: @white;
+
+//#1f1f1f;
+@navbar-inverse: @wet-asphalt;
+@navbar-inverse-selected: @midnight-blue;
+@grey: grey;
+@panel-heading-color: @wet-asphalt;
+@black: black;
+
+@light-grey: #8b8b8a;
+@dark-grey: #707070;
+@darker-grey: #5a5a5a;
+
+@footer-color: #262626;
+
+@translucent-white-2: rgba(255, 255, 255, 0.2);
+@translucent-white-25: rgba(255, 255, 255, 0.25);
+@translucent-white-3: rgba(255, 255, 255, 0.3);
+@translucent-white-5: rgba(255, 255, 255, 0.5);
+
+@translucent-black-2: rgba(0, 0, 0, 0.2);
+@translucent-black-25: rgba(0, 0, 0, 0.25);
+@translucent-black-3: rgba(0, 0, 0, 0.3);
+@translucent-black-5: rgba(0, 0, 0, 0.5);
+
+@almost-transparent-black-05: rgba(0, 0, 0, 0.05);
+@almost-transparent-black-1: rgba(0, 0, 0, 0.1);
+@almost-transparent-white-05: rgba(255, 255, 255, 0.05);
+@almost-transparent-white-1: rgba(255, 255, 255, 0.1);
+
+@lighter-green: #dff948;
+@light-green: #b6c753;
+@green: #b2c831;
+
+@light-red: #f93e4b;
+@red: #fa1d2d;
+@bright-red: red;
+
+@light-blue: #4fc9ee;
+@blue: #3aa2d0;
+
+/** DASHBOARD UNIT COLORS */
+
+@unit-border-color: @wet-asphalt;
+@unit-bg-color: @clouds;
+@unit-hover-bg-color: @clouds;
+@unit-hover-shadow-color: @midnight-blue;
+
+/* -- END CURRENT COLOR SCHEME -- */
+
+/* SIDEBAR COLORS */
+@sidebar-bg-color: #DDDDDD;
+@sidebar-selected-color: @clouds-selected;
+
+/* -- BEGIN MIXINS -- */
+
+.switch-color(@light-color, @color) {
+  background: @color;
+  background-image: -webkit-linear-gradient(top, @light-color, @color);
+  background-image: -moz-linear-gradient(top, @light-color, @color);
+  background-image: -o-linear-gradient(top, @light-color, @color);
+  background-image: linear-gradient(to bottom, @light-color, @color);
+}
+
+.box-shadow(@shadows...) {
+  -webkit-box-shadow: @shadows;
+  -moz-box-shadow: @shadows;
+  box-shadow: @shadows;
+}
+
+.border-radius(@radius...) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.transition(@transitions...) {
+  -webkit-transition: @transitions;
+  -moz-transition: @transitions;
+  -o-transition: @transitions;
+  transition: @transitions;
+}
+
+/* -- END MIXINS -- */
+
+@top-bar-height: 50px;
+@topbar-bg-color: @wet-asphalt;
+
+@sidebar-topbar-color: @midnight-blue;
+
+@sidebar-width: 265px;
+@sidebar-button-height: auto;
+@sidebar-button-padding: 12px 17px;
+
+@user-info-height: 110px;
+@user-pic-size: 100px;
+
+@list-item-height: 30px;
+@list-item-color: @wet-asphalt;
+
+.snap-content {
+  background-color: @clouds;
+  margin-left: -1px;
+}
+
+.topbar {
+  width: 100%;
+  height: @top-bar-height;
+  background-color: @topbar-bg-color;
+}
+
+.toggle-button {
+  background-color: @topbar-bg-color;
+  height: 100%;
+  border: none;
+  width: @top-bar-height;
+}
+
+.toggle-button .icon-bar {
+  background-color: white;
+  display: block;
+  width: 22px;
+  height: 3px;
+  border-radius: 3px;
+  line-height: 20px;
+  margin: 4px 2px;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button i {
+  color: white;
+
+}
+
+.snap-drawer {
+  background-color: @sidebar-bg-color;
+}
+
+.sidebar-topbar {
+  background-color: @sidebar-topbar-color;
+  color: white;
+  font-size: 20pt;
+  font-weight: 600;
+  padding: 3px 13.25px;
+  height: @top-bar-height;
+}
+
+.sidebar-topbar a,
+.sidebar-topbar a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.circle-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url(http://placekitten.com/g/200/400);
+  display: block;
+  background-position: 10% 30%;
+}
+
+.user-info {
+  height: @user-info-height;
+  display: inline-flex;
+  margin: 10px 0;
+}
+
+.user-pic {
+  width: @user-pic-size;
+  padding: 2px;
+  margin: 5px;
+}
+
+.user-text {
+  margin: 27px 9px;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.nav-pills > .sidebar-button {
+  height: @sidebar-button-height;
+  padding: 0;
+  line-height: normal;
+  border: 1px solid @sidebar-selected-color;
+  margin: 0px;
+}
+
+.nav-stacked > li + li {
+  margin: 0px;
+  border-top: none;
+}
+
+.sidebar-button:active {
+  background-color: @sidebar-selected-color;
+}
+
+.dashboard-header {
+  padding: 10px 10px 10px 15px;
+}
+
+.dashboard-title {
+  font-size: 18pt;
+  width: 40%;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.dashboard-header .breadcrumbs {
+  float: right;
+  display: inline-block;
+  margin-bottom: 0px;
+}
+
+.breadcrumb {
+  margin-bottom: 0px;
+}
+
+.dashboard-content {
+  padding: 10px;
+}
+
+hr {
+  margin: 0 auto;
+  border: 0;
+  width: 99%;
+  border-top: 1px solid #ADACAC !important;
+}
+
+.snapjs-left .snap-content .dashboard-view {
+  width: 78.5%
+}
+
+.dashboard-view {
+  /* For Safari 3.1 to 6.0 */
+  -webkit-transition-property: width;
+  -webkit-transition-duration: 1s;
+  -webkit-transition-timing-function: ease;
+  -webkit-transition-delay: 5s;
+  /* Standard syntax */
+  transition-property: width;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 5s;
+}
+
+.item-block {
+  border-radius: 0px;
+  border: 2px solid @midnight-blue;
+  color: @midnight-blue;
+  line-height: 0.8;
+  height: 35px;
+  text-align: center;
+  display: table;
+  width: 80%;
+  margin: 15px 40px;
+  padding: 3px;
+}
+
+.item-block .info-button {
+  float: right;
+  padding: 4px 8px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+info-button {
+  display: inline;
+}
+
+.item-block-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  padding: 7px 10px 5px 10px;
+  color: @midnight-blue;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.item-block a,
+.item-block a:hover {
+  color: @midnight-blue;
+  text-decoration: none;
+}
+
+.requirement-item {
+  font-size: 16px;
+  margin: 5px 0px 10px 20px;
+}
+
+.requirement-item .glyphicon {
+  font-size: 11px;
+}
+
+.requirement-area-item {
+  margin-left: 0px;
+  font-size: small;
+  list-style: none;
+}
+
+.no-chevron {
+  margin-left: 15px;
+}
+
+.nav-pills > .sidebar-button > a {
+  padding: 16px 17px 12px 17px;
+  text-align: left;
+  font-size: 16px;
+  margin: 0;
+  border-radius: 0px;
+  height: 100%;
+}
+
+.nav-pills > .sidebar-button > a:hover {
+  background: none;
+}
+
+.sidebar-button:hover {
+  background-color: rgba(167, 167, 167, 0.21);
+}
+
+.sidebar-button a,
+.sidebar-button a:hover {
+  color: black;
+  text-dectoration: none;
+}
+
+.sidebar-button a.active {
+  color: #ffffff;
+  background-color: #428bca;
+}
+
+.nav-pills > .sidebar-button > a.active:hover {
+  background: #286BAA;
+}
+
+/* FILTER STYLES */
+
+.filters > .filter-dropdown {
+  width: auto;
+  display: inline-table;
+  margin: 5px 2px;
+}
+
+.filters > .filter-dropdown > .filter-dropdown {
+  width: auto;
+  display: inline-table;
+  margin: 5px 2px;
+}
+
+.filters {
+  position: absolute;
+  z-index: 5;
+}
+
+.filter-dropdown .glyphicon {
+  font-size: x-small;
+}
+
+.filter-dropdown .filter-label {
+  font-size: small;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.filter-dropdown .filter-list {
+  font-size: 12px;
+  margin-top: -8px;
+  padding-left: 5px;
+  padding-right: 6px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding-top: 10px;
+  z-index: 4;
+  position: relative;
+  background-color: white;
+
+}
+
+.filter-dropdown .filter-list .glyphicon {
+  font-size: small;
+}
+
+.divider {
+  border-top: 1px solid @midnight-blue;
+  margin-right: 4px;
+}
+
+.filter-label-button {
+  width: auto;
+  display: inline-block;
+  padding: 2px 5px 3px 5px;
+  border: 1px solid @silver;
+  background-color: @silver;
+  border-radius: 5px;
+  z-index: 5;
+  position: relative;
+}
+
+.filters {
+  display: flex;
+}
+
+.dashboard-content {
+  color: @midnight-blue !important;
+}
+
+/* END FILTER STYLES */

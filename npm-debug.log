@@ -1,0 +1,341 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'jquery', '--save' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.26
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'jquery', null ]
+6 verbose cache add name=undefined spec="jquery" args=["jquery",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'jquery',
+7 verbose parsed url   path: 'jquery',
+7 verbose parsed url   href: 'jquery' }
+8 silly lockFile 6f2ab963-jquery jquery
+9 verbose lock jquery /Users/steinbergkh/.npm/6f2ab963-jquery.lock
+10 silly lockFile 6f2ab963-jquery jquery
+11 silly lockFile 6f2ab963-jquery jquery
+12 verbose addNamed [ 'jquery', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 039e748d-jquery jquery@
+15 verbose lock jquery@ /Users/steinbergkh/.npm/039e748d-jquery.lock
+16 silly addNameRange { name: 'jquery', range: '*', hasData: false }
+17 silly addNameRange number 2 { name: 'jquery', range: '*', hasData: true }
+18 silly addNameRange versions [ 'jquery',
+18 silly addNameRange   [ '1.5.1',
+18 silly addNameRange     '1.6.2',
+18 silly addNameRange     '1.6.3',
+18 silly addNameRange     '1.7.2',
+18 silly addNameRange     '1.7.3',
+18 silly addNameRange     '1.8.2',
+18 silly addNameRange     '1.8.3',
+18 silly addNameRange     '2.1.0-beta2',
+18 silly addNameRange     '2.1.0-beta3',
+18 silly addNameRange     '1.11.0-beta3',
+18 silly addNameRange     '1.11.0-rc1',
+18 silly addNameRange     '2.1.0-rc1',
+18 silly addNameRange     '1.11.0',
+18 silly addNameRange     '2.1.0',
+18 silly addNameRange     '2.1.1-beta1',
+18 silly addNameRange     '1.11.1-beta1',
+18 silly addNameRange     '2.1.1-rc1',
+18 silly addNameRange     '1.11.1-rc1',
+18 silly addNameRange     '2.1.1-rc2',
+18 silly addNameRange     '1.11.1-rc2',
+18 silly addNameRange     '2.1.1',
+18 silly addNameRange     '1.11.1',
+18 silly addNameRange     '1.9.1' ] ]
+19 verbose addNamed [ 'jquery', '2.1.1' ]
+20 verbose addNamed [ '2.1.1', '2.1.1' ]
+21 silly lockFile d79e7587-jquery-2-1-1 jquery@2.1.1
+22 verbose lock jquery@2.1.1 /Users/steinbergkh/.npm/d79e7587-jquery-2-1-1.lock
+23 silly lockFile 59abe9fa-pmjs-org-jquery-jquery-2-1-1-tgz https://registry.npmjs.org/jquery/-/jquery-2.1.1.tgz
+24 verbose lock https://registry.npmjs.org/jquery/-/jquery-2.1.1.tgz /Users/steinbergkh/.npm/59abe9fa-pmjs-org-jquery-jquery-2-1-1-tgz.lock
+25 verbose addRemoteTarball [ 'https://registry.npmjs.org/jquery/-/jquery-2.1.1.tgz',
+25 verbose addRemoteTarball   '828fc60f50f7ee5983363ef4eb01c5f70af4bd5b' ]
+26 info retry fetch attempt 1 at 14:45:49
+27 verbose fetch to= /var/folders/9c/1wx6jg9d28g2k_j8rzgl64l40000gn/T/npm-80459-NwWZAHb7/registry.npmjs.org/jquery/-/jquery-2.1.1.tgz
+28 http GET https://registry.npmjs.org/jquery/-/jquery-2.1.1.tgz
+29 http 200 https://registry.npmjs.org/jquery/-/jquery-2.1.1.tgz
+30 silly lockFile 59abe9fa-pmjs-org-jquery-jquery-2-1-1-tgz https://registry.npmjs.org/jquery/-/jquery-2.1.1.tgz
+31 silly lockFile 59abe9fa-pmjs-org-jquery-jquery-2-1-1-tgz https://registry.npmjs.org/jquery/-/jquery-2.1.1.tgz
+32 silly lockFile d79e7587-jquery-2-1-1 jquery@2.1.1
+33 silly lockFile d79e7587-jquery-2-1-1 jquery@2.1.1
+34 silly lockFile 039e748d-jquery jquery@
+35 silly lockFile 039e748d-jquery jquery@
+36 silly resolved [ { name: 'jquery',
+36 silly resolved     title: 'jQuery',
+36 silly resolved     description: 'JavaScript library for DOM operations',
+36 silly resolved     version: '2.1.1',
+36 silly resolved     main: 'dist/jquery.js',
+36 silly resolved     homepage: 'http://jquery.com',
+36 silly resolved     author:
+36 silly resolved      { name: 'jQuery Foundation and other contributors',
+36 silly resolved        url: 'https://github.com/jquery/jquery/blob/2.1.1/AUTHORS.txt' },
+36 silly resolved     repository: { type: 'git', url: 'https://github.com/jquery/jquery.git' },
+36 silly resolved     keywords: [ 'jquery', 'javascript', 'browser', 'library' ],
+36 silly resolved     bugs: { url: 'http://bugs.jquery.com' },
+36 silly resolved     licenses: [ [Object] ],
+36 silly resolved     dependencies: {},
+36 silly resolved     devDependencies:
+36 silly resolved      { commitplease: '1.7.0',
+36 silly resolved        grunt: '0.4.2',
+36 silly resolved        'grunt-bowercopy': '0.7.1',
+36 silly resolved        'grunt-cli': '0.1.13',
+36 silly resolved        'grunt-compare-size': '0.4.0',
+36 silly resolved        'grunt-contrib-jshint': '0.8.0',
+36 silly resolved        'grunt-contrib-uglify': '0.3.2',
+36 silly resolved        'grunt-contrib-watch': '0.5.3',
+36 silly resolved        'grunt-git-authors': '1.2.0',
+36 silly resolved        'grunt-jscs-checker': '0.4.1',
+36 silly resolved        'grunt-jsonlint': '1.0.4',
+36 silly resolved        'gzip-js': '0.3.2',
+36 silly resolved        'load-grunt-tasks': '0.3.0',
+36 silly resolved        requirejs: '2.1.10',
+36 silly resolved        testswarm: '1.1.0' },
+36 silly resolved     scripts:
+36 silly resolved      { build: 'npm install && grunt',
+36 silly resolved        start: 'grunt watch',
+36 silly resolved        test: 'grunt' },
+36 silly resolved     _id: 'jquery@2.1.1',
+36 silly resolved     dist:
+36 silly resolved      { shasum: '828fc60f50f7ee5983363ef4eb01c5f70af4bd5b',
+36 silly resolved        tarball: 'http://registry.npmjs.org/jquery/-/jquery-2.1.1.tgz' },
+36 silly resolved     _from: 'jquery@',
+36 silly resolved     _npmVersion: '1.2.25',
+36 silly resolved     _npmUser: { name: 'dmethvin', email: 'dave.methvin@gmail.com' },
+36 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+36 silly resolved     directories: {},
+36 silly resolved     _shasum: '828fc60f50f7ee5983363ef4eb01c5f70af4bd5b',
+36 silly resolved     _resolved: 'https://registry.npmjs.org/jquery/-/jquery-2.1.1.tgz' } ]
+37 info install jquery@2.1.1 into /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi
+38 info installOne jquery@2.1.1
+39 verbose node_modules/jquery unbuild
+40 verbose tar unpack /Users/steinbergkh/.npm/jquery/2.1.1/package.tgz
+41 silly lockFile 26761b05-2-umich-adpi-node-modules-jquery tar:///Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/jquery
+42 verbose lock tar:///Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/jquery /Users/steinbergkh/.npm/26761b05-2-umich-adpi-node-modules-jquery.lock
+43 silly lockFile aeb3958c-gkh-npm-jquery-2-1-1-package-tgz tar:///Users/steinbergkh/.npm/jquery/2.1.1/package.tgz
+44 verbose lock tar:///Users/steinbergkh/.npm/jquery/2.1.1/package.tgz /Users/steinbergkh/.npm/aeb3958c-gkh-npm-jquery-2-1-1-package-tgz.lock
+45 silly gunzTarPerm modes [ '755', '644' ]
+46 silly gunzTarPerm extractEntry package.json
+47 silly gunzTarPerm extractEntry .npmignore
+48 silly gunzTarPerm extractEntry README.md
+49 silly gunzTarPerm extractEntry MIT-LICENSE.txt
+50 silly gunzTarPerm extractEntry CONTRIBUTING.md
+51 silly gunzTarPerm extractEntry .jscsrc
+52 silly gunzTarPerm extractEntry .bowerrc
+53 silly gunzTarPerm extractEntry bower.json
+54 silly gunzTarPerm extractEntry dist/jquery.js
+55 silly gunzTarPerm extractEntry dist/jquery.min.js
+56 silly gunzTarPerm extractEntry dist/cdn/jquery-2.1.1.js
+57 silly gunzTarPerm extractEntry dist/cdn/jquery-2.1.1.min.js
+58 silly gunzTarPerm extractEntry dist/cdn/jquery-2.1.1.min.map
+59 silly gunzTarPerm extractEntry dist/jquery.min.map
+60 silly gunzTarPerm extractEntry AUTHORS.txt
+61 silly gunzTarPerm extractEntry src/wrap.js
+62 silly gunzTarPerm extractEntry src/dimensions.js
+63 silly gunzTarPerm extractEntry src/effects.js
+64 silly gunzTarPerm extractEntry src/event.js
+65 silly gunzTarPerm extractEntry src/deprecated.js
+66 silly gunzTarPerm extractEntry src/intro.js
+67 silly gunzTarPerm extractEntry src/jquery.js
+68 silly gunzTarPerm extractEntry src/manipulation.js
+69 silly gunzTarPerm extractEntry src/offset.js
+70 silly gunzTarPerm extractEntry src/outro.js
+71 silly gunzTarPerm extractEntry src/deferred.js
+72 silly gunzTarPerm extractEntry src/queue.js
+73 silly gunzTarPerm extractEntry src/data.js
+74 silly gunzTarPerm extractEntry src/selector-native.js
+75 silly gunzTarPerm extractEntry src/css.js
+76 silly gunzTarPerm extractEntry src/selector-sizzle.js
+77 silly gunzTarPerm extractEntry src/core.js
+78 silly gunzTarPerm extractEntry src/selector.js
+79 silly gunzTarPerm extractEntry src/callbacks.js
+80 silly gunzTarPerm extractEntry src/serialize.js
+81 silly gunzTarPerm extractEntry src/attributes.js
+82 silly gunzTarPerm extractEntry src/traversing.js
+83 silly gunzTarPerm extractEntry src/ajax.js
+84 silly gunzTarPerm extractEntry src/data/Data.js
+85 silly gunzTarPerm extractEntry src/data/accepts.js
+86 silly gunzTarPerm extractEntry src/data/var/data_priv.js
+87 silly gunzTarPerm extractEntry src/data/var/data_user.js
+88 silly gunzTarPerm extractEntry src/event/alias.js
+89 silly gunzTarPerm extractEntry src/event/support.js
+90 silly gunzTarPerm extractEntry src/queue/delay.js
+91 silly gunzTarPerm extractEntry src/core/access.js
+92 silly gunzTarPerm extractEntry src/core/init.js
+93 silly gunzTarPerm extractEntry src/core/parseHTML.js
+94 silly gunzTarPerm extractEntry src/core/ready.js
+95 silly gunzTarPerm extractEntry src/core/var/rsingleTag.js
+96 silly gunzTarPerm extractEntry src/ajax/jsonp.js
+97 silly gunzTarPerm extractEntry src/ajax/load.js
+98 silly gunzTarPerm extractEntry src/ajax/parseJSON.js
+99 silly gunzTarPerm extractEntry src/ajax/parseXML.js
+100 silly gunzTarPerm extractEntry src/ajax/script.js
+101 silly gunzTarPerm extractEntry src/ajax/xhr.js
+102 silly gunzTarPerm extractEntry src/ajax/var/nonce.js
+103 silly gunzTarPerm extractEntry src/ajax/var/rquery.js
+104 silly gunzTarPerm extractEntry src/css/addGetHookIf.js
+105 silly gunzTarPerm extractEntry src/css/curCSS.js
+106 silly gunzTarPerm extractEntry src/css/defaultDisplay.js
+107 silly gunzTarPerm extractEntry src/css/hiddenVisibleSelectors.js
+108 silly gunzTarPerm extractEntry src/css/support.js
+109 silly gunzTarPerm extractEntry src/css/swap.js
+110 silly gunzTarPerm extractEntry src/css/var/cssExpand.js
+111 silly gunzTarPerm extractEntry src/css/var/getStyles.js
+112 silly gunzTarPerm extractEntry src/css/var/isHidden.js
+113 silly gunzTarPerm extractEntry src/css/var/rmargin.js
+114 silly gunzTarPerm extractEntry src/css/var/rnumnonpx.js
+115 silly gunzTarPerm extractEntry src/attributes/attr.js
+116 silly gunzTarPerm extractEntry src/attributes/classes.js
+117 silly gunzTarPerm extractEntry src/attributes/prop.js
+118 silly gunzTarPerm extractEntry src/attributes/support.js
+119 silly gunzTarPerm extractEntry src/attributes/val.js
+120 silly gunzTarPerm extractEntry src/manipulation/_evalUrl.js
+121 silly gunzTarPerm extractEntry src/manipulation/support.js
+122 silly gunzTarPerm extractEntry src/manipulation/var/rcheckableType.js
+123 silly gunzTarPerm extractEntry src/sizzle/dist/sizzle.js
+124 silly gunzTarPerm extractEntry src/sizzle/dist/sizzle.min.js
+125 silly gunzTarPerm extractEntry src/sizzle/dist/sizzle.min.map
+126 silly gunzTarPerm extractEntry src/sizzle/test/jquery.js
+127 silly gunzTarPerm extractEntry src/sizzle/test/data/empty.js
+128 silly gunzTarPerm extractEntry src/sizzle/test/data/testinit.js
+129 silly gunzTarPerm extractEntry src/sizzle/test/data/mixed_sort.html
+130 silly gunzTarPerm extractEntry src/sizzle/test/index.html
+131 silly gunzTarPerm extractEntry src/sizzle/test/unit/extending.js
+132 silly gunzTarPerm extractEntry src/sizzle/test/unit/selector.js
+133 silly gunzTarPerm extractEntry src/sizzle/test/unit/utilities.js
+134 silly gunzTarPerm extractEntry src/traversing/findFilter.js
+135 silly gunzTarPerm extractEntry src/traversing/var/rneedsContext.js
+136 silly gunzTarPerm extractEntry src/effects/Tween.js
+137 silly gunzTarPerm extractEntry src/effects/animatedSelector.js
+138 silly gunzTarPerm extractEntry src/var/arr.js
+139 silly gunzTarPerm extractEntry src/var/concat.js
+140 silly gunzTarPerm extractEntry src/var/hasOwn.js
+141 silly gunzTarPerm extractEntry src/var/indexOf.js
+142 silly gunzTarPerm extractEntry src/var/pnum.js
+143 silly gunzTarPerm extractEntry src/var/class2type.js
+144 silly gunzTarPerm extractEntry src/var/rnotwhite.js
+145 silly gunzTarPerm extractEntry src/var/slice.js
+146 silly gunzTarPerm extractEntry src/var/strundefined.js
+147 silly gunzTarPerm extractEntry src/var/support.js
+148 silly gunzTarPerm extractEntry src/var/toString.js
+149 silly gunzTarPerm extractEntry src/var/push.js
+150 silly gunzTarPerm extractEntry src/exports/amd.js
+151 silly gunzTarPerm extractEntry src/exports/global.js
+152 silly lockFile 26761b05-2-umich-adpi-node-modules-jquery tar:///Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/jquery
+153 silly lockFile 26761b05-2-umich-adpi-node-modules-jquery tar:///Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/jquery
+154 silly lockFile aeb3958c-gkh-npm-jquery-2-1-1-package-tgz tar:///Users/steinbergkh/.npm/jquery/2.1.1/package.tgz
+155 silly lockFile aeb3958c-gkh-npm-jquery-2-1-1-package-tgz tar:///Users/steinbergkh/.npm/jquery/2.1.1/package.tgz
+156 info preinstall jquery@2.1.1
+157 verbose readDependencies using package.json deps
+158 verbose readDependencies using package.json deps
+159 silly resolved []
+160 verbose about to build /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/jquery
+161 info build /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/jquery
+162 verbose linkStuff [ false,
+162 verbose linkStuff   false,
+162 verbose linkStuff   false,
+162 verbose linkStuff   '/Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules' ]
+163 info linkStuff jquery@2.1.1
+164 verbose linkBins jquery@2.1.1
+165 verbose linkMans jquery@2.1.1
+166 verbose rebuildBundles jquery@2.1.1
+167 info install jquery@2.1.1
+168 info postinstall jquery@2.1.1
+169 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-angular-templates/node_modules/html-minifier/node_modules/change-case/node_modules/camel-case requires sentence-case@'^0.1.1' but will load
+169 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-angular-templates/node_modules/html-minifier/node_modules/change-case/node_modules/sentence-case,
+169 warn unmet dependency which is version 0.1.2
+170 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-angular-templates/node_modules/html-minifier/node_modules/change-case/node_modules/dot-case requires sentence-case@'^0.1.1' but will load
+170 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-angular-templates/node_modules/html-minifier/node_modules/change-case/node_modules/sentence-case,
+170 warn unmet dependency which is version 0.1.2
+171 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-angular-templates/node_modules/html-minifier/node_modules/change-case/node_modules/param-case requires sentence-case@'^0.1.1' but will load
+171 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-angular-templates/node_modules/html-minifier/node_modules/change-case/node_modules/sentence-case,
+171 warn unmet dependency which is version 0.1.2
+172 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-angular-templates/node_modules/html-minifier/node_modules/change-case/node_modules/path-case requires sentence-case@'^0.1.1' but will load
+172 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-angular-templates/node_modules/html-minifier/node_modules/change-case/node_modules/sentence-case,
+172 warn unmet dependency which is version 0.1.2
+173 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-angular-templates/node_modules/html-minifier/node_modules/change-case/node_modules/snake-case requires sentence-case@'^0.1.1' but will load
+173 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-angular-templates/node_modules/html-minifier/node_modules/change-case/node_modules/sentence-case,
+173 warn unmet dependency which is version 0.1.2
+174 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-angular-templates/node_modules/html-minifier/node_modules/change-case/node_modules/title-case requires sentence-case@'^0.1.1' but will load
+174 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-angular-templates/node_modules/html-minifier/node_modules/change-case/node_modules/sentence-case,
+174 warn unmet dependency which is version 0.1.2
+175 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/imagemin-gifsicle requires image-type@'^0.1.1' but will load
+175 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/image-type,
+175 warn unmet dependency which is version 0.1.4
+176 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/imagemin-jpegtran requires image-type@'^0.1.1' but will load
+176 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/image-type,
+176 warn unmet dependency which is version 0.1.4
+177 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/imagemin-optipng requires image-type@'^0.1.1' but will load
+177 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/image-type,
+177 warn unmet dependency which is version 0.1.4
+178 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/imagemin-pngquant requires image-type@'^0.1.1' but will load
+178 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/image-type,
+178 warn unmet dependency which is version 0.1.4
+179 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/imagemin-gifsicle/node_modules/gifsicle/node_modules/bin-build/node_modules/download/node_modules/decompress/node_modules/extname requires map-key@'^0.1.1' but will load
+179 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/imagemin-gifsicle/node_modules/gifsicle/node_modules/bin-build/node_modules/download/node_modules/decompress/node_modules/map-key,
+179 warn unmet dependency which is version 0.1.4
+180 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/imagemin-gifsicle/node_modules/gifsicle/node_modules/bin-wrapper/node_modules/download/node_modules/decompress/node_modules/extname requires map-key@'^0.1.1' but will load
+180 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/imagemin-gifsicle/node_modules/gifsicle/node_modules/bin-wrapper/node_modules/download/node_modules/decompress/node_modules/map-key,
+180 warn unmet dependency which is version 0.1.4
+181 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/imagemin-jpegtran/node_modules/jpegtran-bin/node_modules/bin-build/node_modules/download/node_modules/decompress/node_modules/extname requires map-key@'^0.1.1' but will load
+181 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/imagemin-jpegtran/node_modules/jpegtran-bin/node_modules/bin-build/node_modules/download/node_modules/decompress/node_modules/map-key,
+181 warn unmet dependency which is version 0.1.4
+182 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/imagemin-jpegtran/node_modules/jpegtran-bin/node_modules/bin-wrapper/node_modules/download/node_modules/decompress/node_modules/extname requires map-key@'^0.1.1' but will load
+182 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/imagemin-jpegtran/node_modules/jpegtran-bin/node_modules/bin-wrapper/node_modules/download/node_modules/decompress/node_modules/map-key,
+182 warn unmet dependency which is version 0.1.4
+183 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/imagemin-optipng/node_modules/optipng-bin/node_modules/bin-build/node_modules/download/node_modules/decompress/node_modules/extname requires map-key@'^0.1.1' but will load
+183 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/imagemin-optipng/node_modules/optipng-bin/node_modules/bin-build/node_modules/download/node_modules/decompress/node_modules/map-key,
+183 warn unmet dependency which is version 0.1.4
+184 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/imagemin-optipng/node_modules/optipng-bin/node_modules/bin-wrapper/node_modules/download/node_modules/decompress/node_modules/extname requires map-key@'^0.1.1' but will load
+184 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/imagemin-optipng/node_modules/optipng-bin/node_modules/bin-wrapper/node_modules/download/node_modules/decompress/node_modules/map-key,
+184 warn unmet dependency which is version 0.1.4
+185 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/imagemin-pngquant/node_modules/pngquant-bin/node_modules/bin-build/node_modules/download/node_modules/decompress/node_modules/extname requires map-key@'^0.1.1' but will load
+185 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/imagemin-pngquant/node_modules/pngquant-bin/node_modules/bin-build/node_modules/download/node_modules/decompress/node_modules/map-key,
+185 warn unmet dependency which is version 0.1.4
+186 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/imagemin-pngquant/node_modules/pngquant-bin/node_modules/bin-wrapper/node_modules/download/node_modules/decompress/node_modules/extname requires map-key@'^0.1.1' but will load
+186 warn unmet dependency /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/imagemin-pngquant/node_modules/pngquant-bin/node_modules/bin-wrapper/node_modules/download/node_modules/decompress/node_modules/map-key,
+186 warn unmet dependency which is version 0.1.4
+187 error peerinvalid The package grunt does not satisfy its siblings' peerDependencies requirements!
+187 error peerinvalid Peer grunt-contrib-copy@0.5.0 wants grunt@~0.4.0
+187 error peerinvalid Peer grunt-express-server@0.4.17 wants grunt@~0.4.0
+187 error peerinvalid Peer grunt-karma@0.8.3 wants grunt@0.4.x
+187 error peerinvalid Peer jit-grunt@0.5.0 wants grunt@~0.4.0
+187 error peerinvalid Peer grunt-contrib-clean@0.5.0 wants grunt@~0.4.0
+187 error peerinvalid Peer grunt-contrib-compass@0.7.2 wants grunt@~0.4.0
+187 error peerinvalid Peer grunt-newer@0.7.0 wants grunt@~0.4.1
+187 error peerinvalid Peer grunt-usemin@2.1.1 wants grunt@>=0.4.0
+187 error peerinvalid Peer grunt-concurrent@0.5.0 wants grunt@~0.4.0
+187 error peerinvalid Peer grunt-contrib-coffee@0.10.1 wants grunt@~0.4.0
+187 error peerinvalid Peer grunt-contrib-concat@0.4.0 wants grunt@~0.4.0
+187 error peerinvalid Peer grunt-contrib-htmlmin@0.2.0 wants grunt@~0.4.0
+187 error peerinvalid Peer grunt-contrib-sass@0.7.3 wants grunt@~0.4.0
+187 error peerinvalid Peer grunt-asset-injector@0.1.0 wants grunt@~0.4.1
+187 error peerinvalid Peer grunt-autoprefixer@0.7.6 wants grunt@~0.4.2
+187 error peerinvalid Peer grunt-bower-install@1.4.1 wants grunt@~0.4.0
+187 error peerinvalid Peer grunt-contrib-watch@0.6.1 wants grunt@~0.4.0
+187 error peerinvalid Peer grunt-svgmin@0.4.0 wants grunt@~0.4.0
+187 error peerinvalid Peer grunt-contrib-cssmin@0.9.0 wants grunt@~0.4.1
+187 error peerinvalid Peer grunt-contrib-jade@0.11.0 wants grunt@~0.4.1
+187 error peerinvalid Peer grunt-contrib-jshint@0.10.0 wants grunt@~0.4.0
+187 error peerinvalid Peer grunt-contrib-less@0.11.3 wants grunt@^0.4.0
+187 error peerinvalid Peer grunt-dom-munger@3.4.0 wants grunt@~0.4.1
+187 error peerinvalid Peer grunt-node-inspector@0.1.5 wants grunt@~0.4.2
+187 error peerinvalid Peer grunt-protractor-runner@0.2.5 wants grunt@~0.4.1
+187 error peerinvalid Peer grunt-contrib-uglify@0.4.1 wants grunt@~0.4.0
+187 error peerinvalid Peer grunt-nodemon@0.2.1 wants grunt@~0.4.1
+187 error peerinvalid Peer grunt-contrib-imagemin@0.7.1 wants grunt@^0.4.0
+188 error System Darwin 14.0.0
+189 error command "node" "/usr/local/bin/npm" "install" "jquery" "--save"
+190 error cwd /Users/steinbergkh/Documents/Programming/angular-fullstack2/umich-adpi
+191 error node -v v0.10.26
+192 error npm -v 1.4.21
+193 error code EPEERINVALID
+194 verbose exit [ 1, true ]

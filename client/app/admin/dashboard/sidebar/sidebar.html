@@ -1,0 +1,25 @@
+<div snap-drawer ng-controller="SidebarController">
+    <div class="sidebar-topbar">
+        <a ng-href="#/admin"><span>UMich ADPi</span></a>
+    </div>
+    <div class="sidebar-content">
+        <div class="user-info">
+            <div class="user-pic">
+                <div class="circle-image"></div>
+            </div>
+            <div class="user-text">
+                <div class="user-name">{{user.name}}</div>
+                <div class="user-title">{{user.title}}</div>
+            </div>
+        </div>
+
+        <ul class="nav nav-pills nav-stacked">
+
+            <li class="sidebar-button" ng-repeat="button in currentViewSidebar"><a
+                    ng-click="selectItem(button)" ui-sref-active="active" ui-sref="{{button.state}}">{{button.name}}</a>
+            </li>
+
+        </ul>
+    </div>
+
+</div>
