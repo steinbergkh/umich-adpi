@@ -15,7 +15,7 @@
         <div class="photo row" ng-repeat="photo in photos | orderBy:'version':true">
             <h2>{{photo.context.custom.photo}}</h2>
 
-            <div class="col-md-2" style="margin-right: 15px">
+            <div class="col-md-3" style="margin-right: 15px">
                 <a href="{{photo.cloudinaryId}}" format="jpg" target="_blank">
                     <img src="{{photo.url}}" class="thumbnail inline" width="240"
                          quality="80"/>
@@ -28,25 +28,30 @@
 
             </div>
 
-            <div class="col-md-1">
-                gallery
-                <input type="checkbox"
-                       ng-model="photo.gallery"
-                       ng-change="checkbox(photo)">
-            </div>
-
-            <div class="col-md-1">
-                has rho
-                <input type="checkbox"
-                       ng-model="photo.rho"
-                       ng-change="checkbox(photo)">
-            </div>
-
             <div class="col-md-2">
-                approved
-                <input type="checkbox"
-                       ng-model="photo.approved"
-                       ng-change="checkbox(photo)">
+                <!--<div class="row">-->
+                    <!--gallery-->
+                    <!--<input type="checkbox"-->
+                           <!--ng-model="photo.gallery"-->
+                           <!--ng-change="checkbox(photo)">-->
+                <!--</div>-->
+                <!--<div class="row">-->
+                    <!--<div class="col-md-1">-->
+                        <!--has rho-->
+                        <!--<input type="checkbox"-->
+                               <!--ng-model="photo.rho"-->
+                               <!--ng-change="checkbox(photo)">-->
+                    <!--</div>-->
+                <!--</div>-->
+                <div class="row">
+                    <div class="col-md-2">
+                        approved
+                        <input type="checkbox"
+                               ng-model="photo.approved"
+                               ng-change="checkbox(photo)">
+                    </div>
+                </div>
+
             </div>
 
             <div class="col-md-1">

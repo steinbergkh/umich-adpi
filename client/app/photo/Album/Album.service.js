@@ -214,6 +214,7 @@ angular.module('umichAdpiApp').factory('galleryAPIService', function ($rootScope
 
                 var imageJSON = $rootScope.photos[index];
                 var imageDB = image;
+                var oldTags = imageDB.tags;
                 var tagsArray = imageDB.tags.split(',');
                 imageDB.tags = [];
                 var i;
@@ -222,6 +223,7 @@ angular.module('umichAdpiApp').factory('galleryAPIService', function ($rootScope
                     imageDB.tags.push({"text": tagsArray[i]});
                 }
                 $rootScope.photos[index].tags = imageDB.tags;
+                $rootScope.photos[index].tagsString = oldTags;
 
             });
         };

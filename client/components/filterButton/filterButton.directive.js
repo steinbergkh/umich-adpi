@@ -23,3 +23,22 @@ angular.module('umichAdpiApp').directive('filterButton', function ($rootScope) {
         }
     };
 });
+
+angular.module('umichAdpiApp').filter('selectedTags', function () {
+    return function (items, tags) {
+        return items.filter(function (item) {
+            if ((typeof tags == undefined) || (tags.length < 1)){
+                return true;
+            }
+            for (var i in tags) {
+                console.log(item.tagsString);
+                console.log(i);
+                if (item.tagsString.indexOf(tags[i]) != -1) {
+                    return true;
+                }
+            }
+            return false;
+
+        });
+    };
+});

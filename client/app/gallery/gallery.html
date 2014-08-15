@@ -7,7 +7,7 @@
         </div>
 
         <div class="row">
-            <div style="display:inline; margin: 5px 5px;" ng-repeat="photo in photos">
+            <div style="display:inline; margin: 5px 5px;" ng-repeat="photo in photos | selectedTags: filterTags">
                 <cl-image style="max-width: 100%; max-height: 400px; margin: 5px 5px;" class="image" src="{{photo.url}}"
                           crop="scale"
                           quality="80"/>

@@ -27,8 +27,11 @@ exports.index = function (req, res) {
                 console.log('couldn\'t find member with id = ' + memId);
             }
             var ExecBoardItem = ExecBoard(positionItem, member);
-            ExecBoardList.push(ExecBoardItem);
-            if (ExecBoardList.length > 7) {
+            if (member.name != 'Celina'){
+                ExecBoardList.push(ExecBoardItem);
+            }
+
+            if (ExecBoardList.length > 6) {
                 ExecBoardList = _.sortBy(ExecBoardList, function (item) {
                     var rank = item.position.rank;
                     console.log(rank);
