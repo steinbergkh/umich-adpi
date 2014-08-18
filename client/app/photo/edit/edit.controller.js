@@ -84,13 +84,12 @@ angular.module('umichAdpiApp').controller('PhotoEditController', function ($scop
             approved: photo.approved,
             rho: photo.rho,
             tags: tagsArray
-        }).$promise.then(editImageCallback);
+        }).$promise.then(editImageCallback);mo
     };
 
 
-    $scope.deleteImage = function (id) {
-
-
+    $scope.deleteImage = function (photo, id) {
+        photo.deleted = true;
         console.log('going to delete image with id ' + id);
         ImageDelete.removeImage({id: id}).$promise.then(deleteImageCallback);
     };
